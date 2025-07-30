@@ -43,6 +43,9 @@ export default function Index() {
           onPress={() => {}}
         />
       </Link>
+      <View style={styles.aboutContainer} >
+        <Text style={styles.step} >Desenvolvido por EduCoChain</Text>
+      </View>
     </View>
   );
 }
@@ -61,7 +64,7 @@ const styles = StyleSheet.create({
     // borderWidth: 1
   },
   title: {
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: "bold",
     textAlign: 'center',
     color: '#5d1923',
@@ -87,5 +90,16 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginBottom: 10,
     color: '#555',
+  },
+  about: {
+    fontSize: 14,
+    marginBottom: 10,
+    color: '#555',
+  },
+  aboutContainer: {
+    marginTop: '20%',
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: '#f2eee2', // Um fundo suave para a Home
   },
 });
