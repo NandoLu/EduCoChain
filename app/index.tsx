@@ -4,7 +4,7 @@ import AppButton from '../components/AppButton';
 import React, { useState } from 'react';
 
 export default function Index() {
-  const [isWalletConnected, setIsWalletConnected] = useState(false); 
+  const [isWalletConnected, setIsWalletConnected] = useState(false);
   const [isConnecting, setIsConnecting] = useState(false);
 
   const handleConnectWallet = async () => {
@@ -20,29 +20,29 @@ export default function Index() {
         source={require('../assets/images/EduCoChain-logo.png')}
         style={styles.logo}
       />
-      <Text style={styles.title}>Bem-vindo ao EduCoChain!</Text>
 
       <View style={styles.stepsContainer}>
-            <Text style={styles.stepsTitle}>Como conectar sua carteira:</Text>
-            <Text style={styles.step}>1. Instale um aplicativo de carteira (Ex: MetaMask).</Text>
-            <Text style={styles.step}>2. Abra o aplicativo e crie ou importe uma carteira.</Text>
-            <Text style={styles.step}>3. Volte aqui e clique em "Conectar Carteira" para vincular seu DApp.</Text>
-            <Text style={styles.step}>4. Confirme a conexão na sua carteira.</Text>
+        <Text style={styles.stepsTitle}>Como conectar sua carteira:</Text>
+        <Text style={styles.step}>1. Instale um aplicativo de carteira (Ex: MetaMask).</Text>
+        <Text style={styles.step}>2. Abra o aplicativo e crie ou importe uma carteira.</Text>
+        <Text style={styles.step}>3. Volte aqui e clique em "Conectar Carteira" para vincular seu App.</Text>
+        <Text style={styles.step}>4. Confirme a conexão na sua carteira.</Text>
 
-            <AppButton
-                    title="Conectar Carteira"
-                    onPress={handleConnectWallet}
-                    disabled={true} // Desabilitado
-                    loading={isConnecting} // Mostra spinner se estiver conectando
-                  />
-        </View>
+        <AppButton
+          title="Conectar Carteira"
+          onPress={handleConnectWallet}
+          disabled={true} // Desabilitado
+          loading={isConnecting} // Mostra spinner se estiver conectando
+        />
+      </View>
 
       <Link href="/home" asChild>
-        <AppButton 
-          title="Ir para Home (teste)" 
-          onPress={() => {}}
+        <AppButton
+          title="Ir para Home (teste)"
+          onPress={() => { }}
         />
       </Link>
+      
       <View style={styles.aboutContainer} >
         <Text style={styles.step} >Desenvolvido por EduCoChain</Text>
       </View>
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     color: '#5d1923',
     marginTop: 25,
   },
-// STEPS 
+  // STEPS 
   stepsContainer: {
     padding: 20,
     backgroundColor: '#fff',
