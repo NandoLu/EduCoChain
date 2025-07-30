@@ -1,10 +1,11 @@
-// app/home.tsx
 import { Text, View, StyleSheet } from "react-native";
+import Header from '../components/Header';
 import { Stack } from "expo-router";
 
 export default function Home() {
   return (
     <View style={styles.container}>
+      <Header />
       <Stack.Screen options={{ title: "EduCoChain Home" }} /> 
       {/* <Text style={styles.title}>Carteira Conectada com Sucesso!</Text> */}
       <Text style={styles.subtitle}>Bem-vindo ao EduCoChain.</Text>
@@ -15,9 +16,8 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
+    // justifyContent: "center",
     alignItems: "center",
-    padding: 20,
     backgroundColor: '#f2eee2', // Um fundo suave para a Home
   },
   title: {
@@ -31,4 +31,8 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     color: '#333',
   },
+  header:{
+    width: '100%',
+    borderWidth:1,
+  }
 });

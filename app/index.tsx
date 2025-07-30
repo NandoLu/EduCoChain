@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: 'center',
     color: '#5d1923',
-    marginVertical: 10,
+    marginTop: 25,
   },
 // STEPS 
   stepsContainer: {
