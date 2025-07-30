@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
         width: 13,  // Tamanho da bolinha
         height: 13,
         borderRadius: 10,
-        backgroundColor: '#28a745',
+        backgroundColor: '#dc0d0dff',
+        // backgroundColor: '#28a745',
         marginLeft: 15,
     },
     text: {
