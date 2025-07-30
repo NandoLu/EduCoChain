@@ -1,5 +1,7 @@
 import { Text, View, StyleSheet } from "react-native";
 import Header from '../components/Header';
+import FooterNav from '../components/FooterNav';
+import Body from '../components/Body';
 import { Stack } from "expo-router";
 
 export default function Home() {
@@ -8,7 +10,9 @@ export default function Home() {
       <Header />
       <Stack.Screen options={{ title: "EduCoChain Home" }} /> 
       {/* <Text style={styles.title}>Carteira Conectada com Sucesso!</Text> */}
-      <Text style={styles.subtitle}>Bem-vindo ao EduCoChain.</Text>
+      {/* <Text style={styles.subtitle}>Bem-vindo ao EduCoChain.</Text> */}
+      <Body></Body>
+      <FooterNav></FooterNav>
     </View>
   );
 }

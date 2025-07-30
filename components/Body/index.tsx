@@ -16,9 +16,8 @@ const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         alignItems: 'center',
-        paddingHorizontal: 30,
+        padding: 30,
         flexDirection: 'row',
-        justifyContent: 'space-between',
         backgroundColor: '#f9f5ebff',
     },
     connectedStatus: {
