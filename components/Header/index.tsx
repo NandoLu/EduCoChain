@@ -19,14 +19,21 @@ const Header = () => {
 const styles = StyleSheet.create({
     container: {
         paddingTop: 40,
-        padding: 20,
+        paddingBottom: 20,
         width: '100%',
-        height: '15%',
+        height: '13%',
         alignItems: 'center',
         paddingHorizontal: 30,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        backgroundColor: '#f2eee2', 
+        backgroundColor: '#f2eee2',
+        // --- Sombra para iOS ---
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.1,
+        shadowRadius: 5,
+        // --- Estilo de elevação para Android ---
+        elevation: 2,
     },
     logo: {
         height: 50,
@@ -38,15 +45,15 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     greenDot: {
-        width: 10,  // Tamanho da bolinha
-        height: 10,
-        borderRadius: 5, 
-        backgroundColor: '#28a745', 
-        marginLeft: 10, 
+        width: 13,  // Tamanho da bolinha
+        height: 13,
+        borderRadius: 10,
+        backgroundColor: '#28a745',
+        marginLeft: 15,
     },
     text: {
         color: '#5d1923',
-        fontSize: 16,
+        fontSize: 17,
         fontWeight: 'bold',
     },
 });
