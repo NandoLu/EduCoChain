@@ -9,8 +9,6 @@ export default function Home() {
     <View style={styles.container}>
       <Header />
       <Stack.Screen options={{ title: "EduCoChain Home" }} /> 
-      {/* <Text style={styles.title}>Carteira Conectada com Sucesso!</Text> */}
-      {/* <Text style={styles.subtitle}>Bem-vindo ao EduCoChain.</Text> */}
       <Body></Body>
       <FooterNav></FooterNav>
     </View>
@@ -22,7 +20,6 @@ const styles = StyleSheet.create({
     flex: 1,
     // justifyContent: "center",
     alignItems: "center",
-    backgroundColor: '#f2eee2', // Um fundo suave para a Home
   },
   title: {
     fontSize: 26,

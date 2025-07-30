@@ -1,12 +1,15 @@
 import React from 'react';
-import { View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+import SearchCont from '../SearchCont';
 
 const Body = () => {
     return (
         <View style={styles.container}>
-            <View style={styles.connectedStatus}>
+            <View>
                 <Text style={styles.text}>Bem-vindo ao EduCoChain!</Text>
             </View>
+            <SearchCont />
+
         </View>
     );
 };
@@ -16,13 +19,9 @@ const styles = StyleSheet.create({
         flex: 1,
         width: '100%',
         alignItems: 'center',
+        justifyContent: 'center',
         padding: 30,
-        flexDirection: 'row',
-        backgroundColor: '#f9f5ebff',
-    },
-    connectedStatus: {
-        flexDirection: 'row',
-        alignItems: 'center',
+        flexDirection: 'column',
     },
     text: {
         color: '#5d1923',

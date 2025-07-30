@@ -25,7 +25,7 @@ export default function Index() {
         <Text style={styles.stepsTitle}>Como conectar sua carteira:</Text>
         <Text style={styles.step}>1. Instale um aplicativo de carteira (Ex: MetaMask).</Text>
         <Text style={styles.step}>2. Abra o aplicativo e crie ou importe uma carteira.</Text>
-        <Text style={styles.step}>3. Volte aqui e clique em "Conectar Carteira" para vincular seu App.</Text>
+        <Text style={styles.step}>3. Volte aqui e clique em "Conectar Carteira".</Text>
         <Text style={styles.step}>4. Confirme a conexão na sua carteira.</Text>
 
         <AppButton
@@ -38,7 +38,7 @@ export default function Index() {
 
       <Link href="/home" asChild>
         <AppButton
-          title="Ir para Home (teste)"
+          title="Ir para Home"
           onPress={() => { }}
         />
       </Link>
