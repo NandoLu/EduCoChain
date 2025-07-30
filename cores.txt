@@ -1,0 +1,3 @@
+Vermelho: #5d1923
+Claro: #e9f7ef
+Dourado: #887447
