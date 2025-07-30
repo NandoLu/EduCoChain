@@ -1,0 +1,40 @@
+import React from 'react';
+import { View, Text, StyleSheet} from 'react-native';
+
+
+const stepsContainer = ({}) => {
+    return (
+        <View style={styles.stepsContainer}>
+            <Text style={styles.stepsTitle}>Como conectar sua carteira:</Text>
+            <Text style={styles.step}>1. Instale um aplicativo de carteira (Ex: MetaMask).</Text>
+            <Text style={styles.step}>2. Abra o aplicativo e crie ou importe uma carteira.</Text>
+            <Text style={styles.step}>3. Volte aqui e clique em "Conectar Carteira" para vincular seu DApp.</Text>
+            <Text style={styles.step}>4. Confirme a conexão na sua carteira.</Text>
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    stepsContainer: {
+    padding: 20,
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    width: '90%',
+    elevation: 2,
+    marginVertical: 10,
+  },
+  stepsTitle: {
+    fontSize: 18,
+    fontWeight: "600",
+    marginBottom: 15,
+    textAlign: 'center',
+    color: '#333',
+  },
+  step: {
+    fontSize: 14,
+    marginBottom: 10,
+    color: '#555',
+  },
+});
+
+export default stepsContainer;
