@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import { View, Image, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 
 const SearchCont = () => {
     return (
@@ -11,7 +11,10 @@ const SearchCont = () => {
                     placeholderTextColor="#888"
                 />
                 <TouchableOpacity style={styles.searchButton}>
-                    <Text style={styles.searchIcon}>🔍</Text>
+                    <Image
+                        source={require('../../assets/images/search.png')}
+                        style={styles.logo}
+                    />
                 </TouchableOpacity>
             </View>
         </View>
@@ -59,9 +62,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    searchIcon: {
-        fontSize: 16,
-        color: '#fff',
+    logo: {
+        height: 30,
+        width: 30,
+        resizeMode: 'contain',
     },
 });
 
