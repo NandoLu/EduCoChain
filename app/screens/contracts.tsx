@@ -1,7 +1,7 @@
 import { Text, View, StyleSheet } from "react-native";
 import Header from '../../components/Header';
 import FooterNav from '../../components/FooterNav';
-import Body from '../../components/Body';
+import SearchCont from '../../components/SearchCont';
 import { Stack } from "expo-router";
 
 export default function Contracts() {
@@ -9,7 +9,14 @@ export default function Contracts() {
     <View style={styles.container}>
       <Header />
       <Stack.Screen options={{ title: "Contracts" }} /> 
-      <Body></Body>
+
+      {/* CONTEUDO PRINCIPAL  */}
+
+      <View style={styles.body}>
+        <Text style={styles.text}>Contratos</Text>
+        <SearchCont />
+      </View>
+
       <FooterNav></FooterNav>
     </View>
   );
@@ -21,19 +28,17 @@ const styles = StyleSheet.create({
     // justifyContent: "center",
     alignItems: "center",
   },
-  title: {
-    fontSize: 26,
-    fontWeight: "bold",
-    marginBottom: 10,
-    color: '#28a745', // Cor verde para sucesso
-  },
-  subtitle: {
-    fontSize: 20,
-    marginBottom: 20,
-    color: '#333',
-  },
-  header:{
+  body: {
+    flex: 1,
     width: '100%',
-    borderWidth:1,
-  }
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 30,
+    flexDirection: 'column',
+  },
+  text: {
+    color: '#5d1923',
+    fontSize: 17,
+    fontWeight: 'bold',
+  },
 });
