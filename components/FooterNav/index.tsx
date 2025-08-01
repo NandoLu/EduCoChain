@@ -1,48 +1,60 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 const FooterNav = () => {
     return (
         <View style={styles.container}>
-            <Image
-                source={require('../../assets/images/EduCoChain-logo.png')}
-                style={styles.logo}
-            />
-            <Text style={styles.text}>FooterNav</Text>
+            <TouchableOpacity style={styles.buttonFooter} >
+                <Image
+                    source={require('../../assets/images/EduCoChain-logo.png')}
+                    style={styles.icon}
+                />
+                <Text style={styles.text}>Carteira</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.buttonFooter} >
+                <Image
+                    source={require('../../assets/images/EduCoChain-logo.png')}
+                    style={styles.icon}
+                />
+                <Text style={styles.text}>Início</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.buttonFooter} >
+                <Image
+                    source={require('../../assets/images/EduCoChain-logo.png')}
+                    style={styles.icon}
+                />
+                <Text style={styles.text}>Contratos</Text>
+            </TouchableOpacity>
+
         </View>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
-        paddingVertical: 10,
-        paddingHorizontal: 30,
+        paddingBottom: 10,
+        paddingHorizontal: 20,
         width: '100%',
-        height: '13%',
+        height: '14%',
         alignItems: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between',
         backgroundColor: '#f2eee2',
     },
-    logo: {
-        height: 50,
-        width: 100,
-        resizeMode: 'contain',
-    },
-    connectedStatus: {
-        flexDirection: 'row',
+    buttonFooter: {
         alignItems: 'center',
+        borderRadius: 15,
+        padding: 5,
+        width: '28%',
+        backgroundColor: '#ffffffff',
     },
-    greenDot: {
-        width: 13,  // Tamanho da bolinha
-        height: 13,
-        borderRadius: 10,
-        backgroundColor: '#28a745',
-        marginLeft: 15,
+    icon: {
+        height: 50,
+        width: 50,
     },
     text: {
         color: '#5d1923',
-        fontSize: 17,
+        fontSize: 15,
         fontWeight: 'bold',
     },
 });
