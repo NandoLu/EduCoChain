@@ -1,30 +1,39 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { Link, router } from "expo-router";
 
 const FooterNav = () => {
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.buttonFooter} >
-                <Image
-                    source={require('../../assets/images/EduCoChain-logo.png')}
-                    style={styles.icon}
-                />
-                <Text style={styles.text}>Carteira</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.buttonFooter} >
-                <Image
-                    source={require('../../assets/images/EduCoChain-logo.png')}
-                    style={styles.icon}
-                />
-                <Text style={styles.text}>Início</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.buttonFooter} >
-                <Image
-                    source={require('../../assets/images/EduCoChain-logo.png')}
-                    style={styles.icon}
-                />
-                <Text style={styles.text}>Contratos</Text>
-            </TouchableOpacity>
+            <Link href={"/screens/wallet"} asChild>
+                <TouchableOpacity style={styles.buttonFooter} >
+                    <Image
+                        source={require('../../assets/images/EduCoChain-logo.png')}
+                        style={styles.icon}
+                    />
+                    <Text style={styles.text}>Carteira</Text>
+                </TouchableOpacity>
+            </Link>
+
+            <Link href={"/home"} asChild>
+                <TouchableOpacity style={styles.buttonFooter} >
+                    <Image
+                        source={require('../../assets/images/EduCoChain-logo.png')}
+                        style={styles.icon}
+                    />
+                    <Text style={styles.text}>Inicio</Text>
+                </TouchableOpacity>
+            </Link>
+
+            <Link href={"/screens/contracts"} asChild>
+                <TouchableOpacity style={styles.buttonFooter} >
+                    <Image
+                        source={require('../../assets/images/EduCoChain-logo.png')}
+                        style={styles.icon}
+                    />
+                    <Text style={styles.text}>Contratos</Text>
+                </TouchableOpacity>
+            </Link>
 
         </View>
     );
